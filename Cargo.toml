@@ -1,0 +1,19 @@
+[package]
+name = "labwolfram"
+version = "0.1.0"
+authors = ["negamartin"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[profile.release]
+lto = true
+codegen-units = 1
+panic = "abort"
+
+[dependencies]
+enigo = "0.0"
+device_query = "0.2"
+clipboard = "0.5"
+regex = "1"
+lazy_static = "1"
